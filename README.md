@@ -30,7 +30,7 @@ Users should be able to:
 ### Screenshot
 
 Desktop version
-![](screenshot/desktop-screenshot.png.jpg)
+![](screenshot/desktop-screenshot.png)
 
 Hover and active effect
 ![](screenshot/desktop-hover-screenshot.png)
