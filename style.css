@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 60rem;
+  height: 44rem;
+  margin: 15rem auto;
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.img {
+  background-image: url(images/image-product-desktop.jpg);
+  width: 100%;
+  background-size: cover;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.card__catergory {
+  text-transform: uppercase;
+  color: hsl(228, 12%, 60%);
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+.card__title {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  padding: 2.5rem 0;
+}
+
+.card__text {
+  color: hsl(228, 12%, 60%);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(158, 36%, 20%);
+}
+
+.icon {
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.card__price {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 0;
+}
+
+.card__price-sales {
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 3rem;
+}
+
+.card__price-initial {
+  color: hsl(228, 12%, 60%);
+  text-decoration: line-through;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Mobile: 680px */
+@media only screen and (max-width: 42.5em) {
+  .card {
+    grid-template-columns: 100%;
+    grid-template-rows: 47% 53%;
+    max-width: 80%;
+    height: 90vh;
+    margin: 2rem auto;
+    margin-bottom: 5rem;
+  }
+
+  .img {
+    background-image: url(images/image-product-mobile.jpg);
+  }
+
+  .card__title {
+    font-size: 4rem;
+  }
+
+  .card__price {
+    padding-top: 6rem;
+    gap: 3rem;
+  }
+
+  .card__price-sales {
+    font-size: 4rem;
+  }
+
+  .card__price-initial {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 2rem 3rem;
+    font-size: 1.6rem;
+  }
+
+  .icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* 480px */
+@media screen and (max-width: 30em) {
+  .card {
+    height: 100vh;
+  }
+}
